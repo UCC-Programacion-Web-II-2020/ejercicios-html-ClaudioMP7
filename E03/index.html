@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+
+</head>
+<body>
+
+<form action="http://servicios.ver.ucc.mx/procesar.php" method="get">
+
+
+
+    <br>
+    <table width="30%" align="left" border="0" >
+
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input required placeholder="Ej. Juan Peréz" type="text" id="nombre" name="nombre">
+                    <br>
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input required placeholder="juanp@ejemplo.com" type="email" name="email" id="email">
+                    <br>
+                    <label for="password">Contraseña</label>
+                    <br>
+                    <input required placeholder="Introduzca su contraseña" type="password" name="password" id="password">
+                    <br>
+                    <input checked type="radio" value="hombre" name="sexo" id="Hombre"> <label for="Hombre">Hombre</label>
+                    <input type="radio" value="mujer" name="sexo" id="Mujer"> <label for="Mujer">Mujer</label>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <fieldset>
+
+                    <legend>Servicio de noticias</legend>
+                    <input type="checkbox" name="noticias[]" value="Noticias de política" id="npolitica"> <label for="npolitica">Noticias de política</label>
+                    <br>
+                    <input type="checkbox" name="noticias[]" value="Noticias de espectáculos" id="nespectaculos"> <label for="nespectaculos">Noticias de espectáculos</label>
+                    <br>
+                    <input type="checkbox" name="noticias[]" value="Noticias de tecnología" id="ntecnologia"> <label for="ntecnologia">Noticias de tecnología</label>
+                    <br>
+                    <label for="metodoEntrega">Método de entrega</label>
+                    <br>
+                    <select name="metodoEntrega" id="metodoEntrega">
+                        <option value="Portal">Desde el portal</option>
+                        <option value="E-mail">Enviar a mi e-mail</option>
+                    </select>
+                    <br>
+                    <label for="obs">Observación</label>
+                    <br>
+                    <textarea name="obs" id="obs" rows="5" cols="30"></textarea><br>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <br>
+                <input type="submit" value="Enviar">
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+</form>
+
+</body>
+</html>
